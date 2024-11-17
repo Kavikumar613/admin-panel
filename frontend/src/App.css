@@ -1,0 +1,353 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", serif;
+}
+
+:root {
+  --blue: #007bff;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #dc3545;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --green: #28a745;
+  --teal: #20c997;
+  --cyan: #17a2b8;
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --primary: #007bff;
+  --secondary: #6c757d;
+  --success: #28a745;
+  --info: #17a2b8;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --light: #f8f9fa;
+  --dark: #343a40;
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+}
+
+/* Login page css start*/
+.login-page {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: ; */
+  position: relative;
+}
+.logo-img {
+  width: 50px;
+  height: 50px;
+  margin: 30px 40px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 50%;
+  background-color: #c4c4c4;
+}
+
+/* home page css start  */
+
+.all-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.sectiion-all-page {
+  /* background-color: #0c57ed8b; */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.upper-cover-section {
+  min-height: 110px;
+  /* background-color: #0c57ed8b; */
+}
+
+.section-all-page main {
+  height: 100%;
+  margin: 0 auto;
+  min-width: 1336px;
+  max-width: 1950px;
+  width: 100%;
+  padding-bottom: 1rem;
+  /* background-color: #00aa70; */
+  /* background-color: white; */
+}
+
+/* Home Page section start */
+
+.customer-table-container {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  /* padding: 0 10px; */
+}
+/* header style */
+.customer-table-header {
+  display: flex;
+  width: auto;
+  justify-content: space-evenly;
+  height: 120px;
+  flex-direction: column;
+  /* margin-bottom: 20px; */
+  /* padding: 20px; */
+  background-color: #ececec;
+}
+.customer-table-header .filter-row {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #333333;
+}
+
+.section-heading {
+  width: 100%;
+  font-size: 17px;
+  font-weight: 300;
+  background-color: #ecdc46;
+}
+.employee-create {
+  /* background-color: rgb(145, 74, 74); */
+  color: rgb(40, 124, 198);
+  /* padding: 10px 10px 0px 0px; */
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.add-link {
+  padding: 5px 10px;
+  background-color: #ff5722;
+  color: white;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.employee-count {
+  margin-right: 10%;
+}
+
+.search-input {
+  width: 350px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  margin-right: 10px;
+  height: 80%;
+  text-indent: 10px;
+}
+.search-input:focus {
+  border: 1px solid #c82333;
+}
+
+.filter-button {
+  width: 120px;
+  height: 80%;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  text-indent: 10px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+/* Table section */
+.customer-table {
+  width: 100%;
+  border-collapse: collapse;
+  /* border: 1px 1px 0px 1px solid #464f60; */
+}
+.customer-table td {
+  border: 2px solid #464f6072;
+}
+
+.customer-table td {
+  padding: 12px 15px;
+  /* border: 1px solid #ddd; */
+  text-align: left;
+}
+.customer-table th {
+  padding: 12px 15px;
+  /* border: 1px solid #ddd; */
+  text-align: left;
+  user-select: none;
+}
+
+.customer-table th {
+  background-color: #333333;
+  color: #fff;
+  border: 2px solid #333333;
+}
+
+.customer-table th:hover {
+  cursor: pointer;
+}
+.customer-table th:first-child {
+  cursor: default;
+}
+.customer-table th:last-child {
+  cursor: default;
+}
+
+.table-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.action-cell {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.employee-active {
+  padding: 5px;
+  border-radius: 10px;
+  background-color: var(--green);
+  color: var(--white);
+  cursor: pointer;
+}
+.employee-deactive {
+  padding: 5px;
+  border-radius: 10px;
+  background-color: var(--red);
+  color: var(--white);
+  cursor: pointer;
+}
+
+/* pagination css start  */
+.pagination {
+  display: flex;
+  justify-content: flex-end; /* Aligns all buttons to the right */
+  margin-top: 20px;
+}
+.ellipsis {
+  padding: 0 10px;
+  color: #999; /* Light gray for the ellipsis */
+}
+
+.pagination button {
+  padding: 10px 15px;
+  color: #333333;
+  border: none;
+  cursor: pointer;
+  border: 1px solid #dfe3e8;
+  border-radius: 5px;
+  background-color: #fff;
+  margin-left: 10px; /* Add some space between buttons */
+}
+
+.page-btn.active {
+  font-weight: bold;
+  background-color: #4200ff;
+  color: #fff;
+}
+
+.pagination button:disabled {
+  background-color: #919eab;
+  cursor: not-allowed;
+}
+
+/* pagination css end */
+
+.spinner {
+  width: 3rem;
+  height: 3rem;
+  border: 0.4rem solid #e9ecef; /* Light gray border */
+  border-top: 0.4rem solid #007bff; /* Blue border */
+  border-radius: 50%;
+  animation: spin 0.75s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.spinner-container {
+  width: 100%;
+  height: calc(100vh - 190px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 40px); /* Full screen height */
+  /* background: linear-gradient(135deg, #4b79a1, #283e51);  */
+  color: #fff;
+  /* font-family: 'poppins', sans-serif; */
+}
+
+.welcome-container {
+  text-align: center;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+}
+
+.welcome-icon {
+  font-size: 3rem;
+  color: #ffdd59;
+  margin-bottom: 1rem;
+}
+
+.welcome-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.welcome-message {
+  font-size: 1.2rem;
+  color: #333333;
+}
+.trash-icon {
+  fill: var(--danger);
+}
+.edit-icon {
+  fill: var(--blue);
+}
